@@ -19,7 +19,7 @@ Logic: Recursively splits the list into two halves, sorts them, and merges them 
 
 Logic: Recursively splits the list into two parts by a pivot and sorts them.
 
-📊 Project Structure
+## Project Structure
 
 /sorting_analysis_project
 │── /sorting_algorithms
