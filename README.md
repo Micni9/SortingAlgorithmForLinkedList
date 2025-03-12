@@ -21,9 +21,10 @@ Logic: Recursively splits the list into two parts by a pivot and sorts them.
 
 ## Project Structure
 
-/sorting_analysis_project
+/SortingAlgorithmForLinkedList
 │── /sorting_algorithms
 │   │── __init__.py
+│   │── selection_sort.py
 │   │── insertion_sort.py
 │   │── merge_sort.py
 │   │── quick_sort.py
