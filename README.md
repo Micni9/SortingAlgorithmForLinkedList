@@ -34,10 +34,27 @@ Logic: Recursively splits the list into two parts by a pivot and sorts them.
 
 ## How to Run
 
-Install dependencies:
+Navigate to the build directory
+```sh
+if not exist "build" mkdir build
+cd build
+```
+Generate build files using CMake
+```sh
+cmake ..
+```
 
-pip install numpy matplotlib
+Build the project using '''cmake --build'''
+```sh
+cmake --build .
+```
 
-Run the Jupyter Notebook:
+Navigate to the debug directory
+```sh
+cd Debug
+```
 
-jupyter notebook analysis.ipynb
+Run the executable
+```sh
+SortingLinkedList.exe
+```
