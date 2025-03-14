@@ -25,6 +25,9 @@ Logic: Recursively splits the list into two parts by a pivot and sorts them.
 
 ```
 /SortingAlgorithmForLinkedList
+|── /include
+|   |── list_node.h # Definition of ListNode structure
+|   |── sortings.h # Declaration of all implemented sorting methods
 │── /src
 |   |── /algorithms
 │   │   |── selection_sort.cpp
