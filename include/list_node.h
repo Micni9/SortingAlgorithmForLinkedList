@@ -12,6 +12,5 @@ struct ListNode {
 ListNode* create_list(std::vector<int> &vec);
 void print_list(ListNode *head);
 bool is_sorted(ListNode *head);
-ListNode* generateRandomList(int size);
 
 #endif
