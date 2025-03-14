@@ -24,14 +24,18 @@ Logic: Recursively splits the list into two parts by a pivot and sorts them.
 ## Project Structure
 
 /SortingAlgorithmForLinkedList
-│── /sorting_algorithms
-│   │── __init__.py
-│   │── selection_sort.py
-│   │── insertion_sort.py
-│   │── merge_sort.py
-│   │── quick_sort.py
-│── analysis.ipynb  # Jupyter Notebook for benchmarking & visualization
-│── generate_data.py  # Utility to create test data
+│── /src
+|   |── /algorithms
+│   │   |── selection_sort.cpp
+│   │   |── insertion_sort.cpp
+|   |   |── bubble_sort.cpp
+│   │   |── merge_sort.cpp
+│   │   |── quick_sort.cpp
+|   |── /utils
+|   |   |── list_utils.cpp
+|   |── benchmark.cpp
+|   |── main.cpp
+|── CMakeLists.txt
 │── README.md  # Project documentation
 
 ## How to Run
@@ -49,14 +53,4 @@ cmake ..
 Build the project using '''cmake --build'''
 ```sh
 cmake --build .
-```
-
-Navigate to the debug directory
-```sh
-cd Debug
-```
-
-Run the executable
-```sh
-SortingLinkedList.exe
 ```
