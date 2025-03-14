@@ -23,6 +23,7 @@ Logic: Recursively splits the list into two parts by a pivot and sorts them.
 
 ## Project Structure
 
+```
 /SortingAlgorithmForLinkedList
 │── /src
 |   |── /algorithms
@@ -37,6 +38,7 @@ Logic: Recursively splits the list into two parts by a pivot and sorts them.
 |   |── main.cpp
 |── CMakeLists.txt
 │── README.md  # Project documentation
+```
 
 ## How to Run
 
