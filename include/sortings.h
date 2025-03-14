@@ -2,6 +2,8 @@
 #define SORTINGS_H
 
 #include "list_node.h"
+#include <vector>
+#include <string>
 
 void insertion_sort(ListNode*& head);
 void selection_sort(ListNode*& head);
