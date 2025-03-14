@@ -18,7 +18,7 @@ int main(){
         cout<<"0. End the program"<<endl;
 
         
-        vector<string> sortings = {"selection", "insertion", "bubble", "merge", "quick"};
+        vector<string> sortings = {"selection", "insertion", "bubble", "merge", "quick", "MI"};
         for(int i = 0; i < sortings.size(); i++){
             cout<<i+1<<". "<<sortings[i]<<" sort"<<endl;
         }
@@ -44,6 +44,9 @@ int main(){
             case '5':
                 quick_sort(head);
                 break;
+            case '6':
+                MI_sort(head);
+                break;
             default:
                 cout<<"Invalid choice. Please try again."<<endl;
                 char c = cin.get();
@@ -51,6 +54,7 @@ int main(){
                     c = cin.get();
                 }
                 cin.putback(c);
+                delete(head);
                 continue;
         }
 
@@ -62,6 +66,7 @@ int main(){
         else{
             cout<<"The list is not sorted correctly."<<endl;
         }
+        delete(head);
     }
 
     return 0;

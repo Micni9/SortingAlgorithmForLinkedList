@@ -102,9 +102,10 @@ int main() {
     fout<<"\nRandom list: "<<endl;
     benchmarkSortingAlgorithm(selection_sort, copyList(list1), "Selection Sort",fout);
     benchmarkSortingAlgorithm(insertion_sort, copyList(list1), "Insertion Sort",fout);
-    benchmarkSortingAlgorithm(merge_sort, copyList(list1), "Merge Sort",fout);
     benchmarkSortingAlgorithm(bubble_sort, copyList(list1), "Bubble Sort",fout);
+    benchmarkSortingAlgorithm(merge_sort, copyList(list1), "Merge Sort",fout);
     benchmarkSortingAlgorithm(quick_sort, copyList(list1), "Quick Sort",fout);
+    benchmarkSortingAlgorithm(MI_sort, copyList(list1), "MI Sort",fout);
 
     // Benchmark for descending list
     fout<<"\nDescending list: "<<endl;
@@ -113,6 +114,7 @@ int main() {
     benchmarkSortingAlgorithm(bubble_sort, copyList(list2), "Bubble Sort",fout);
     benchmarkSortingAlgorithm(merge_sort, copyList(list2), "Merge Sort",fout);
     benchmarkSortingAlgorithm(quick_sort, copyList(list2), "Quick Sort",fout);
+    benchmarkSortingAlgorithm(MI_sort, copyList(list2), "MI Sort",fout);
 
     // Benchmark for ascending list
     fout<<"\nAscending list: "<<endl;
@@ -121,6 +123,7 @@ int main() {
     benchmarkSortingAlgorithm(bubble_sort, copyList(list3), "Bubble Sort",fout);
     benchmarkSortingAlgorithm(merge_sort, copyList(list3), "Merge Sort",fout);
     benchmarkSortingAlgorithm(quick_sort, copyList(list3), "Quick Sort",fout);
+    benchmarkSortingAlgorithm(MI_sort, copyList(list3), "MI Sort",fout);
 
     // Benchmark for same list
     fout<<"\nSame list: "<<endl;
@@ -129,6 +132,7 @@ int main() {
     benchmarkSortingAlgorithm(bubble_sort, copyList(list4), "Bubble Sort",fout);
     benchmarkSortingAlgorithm(merge_sort, copyList(list4), "Merge Sort",fout);
     benchmarkSortingAlgorithm(quick_sort, copyList(list4), "Quick Sort",fout);
+    benchmarkSortingAlgorithm(MI_sort, copyList(list4), "MI Sort",fout);
 
     // Benchmark for almost sorted list
     fout<<"\nAlmost sorted list: "<<endl;
@@ -137,6 +141,7 @@ int main() {
     benchmarkSortingAlgorithm(bubble_sort, copyList(list5), "Bubble Sort",fout);
     benchmarkSortingAlgorithm(merge_sort, copyList(list5), "Merge Sort",fout);
     benchmarkSortingAlgorithm(quick_sort, copyList(list5), "Quick Sort",fout);
+    benchmarkSortingAlgorithm(MI_sort, copyList(list5), "MI Sort",fout);
 
     fout.close();
     cout<<"Benchmarking completed. Please check the benchmark.txt file for the results."<<endl;

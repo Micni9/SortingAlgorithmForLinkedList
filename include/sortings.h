@@ -10,5 +10,7 @@ void selection_sort(ListNode*& head);
 void bubble_sort(ListNode*& head);
 void merge_sort(ListNode*& head);
 void quick_sort(ListNode*& head);
+void MI_sort(ListNode*& head);
+void merge(ListNode*& head1, ListNode*& head2);
 
 #endif

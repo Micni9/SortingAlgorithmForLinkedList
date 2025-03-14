@@ -1,5 +1,5 @@
 # Sorting Algorithm for Linked List
-This project implements sorting algorithm for linked list which is originally design for array, and compares performance of different algorithm confronting different data.
+This project implements sorting algorithm for linked list which is originally design for array, and compares performance of different algorithm confronting different data. An sorting algorithm inspired by insertion and merge sort is implemented and tests for the performance.
 
 All of these sorting algorithms are in-place.
 
@@ -13,13 +13,21 @@ Logic: Picks the smallest element from unsorted part and swap with the first pos
 
 Logic: Iteratively picks elements from the unsorted part and inserts them into the correct position in the sorted part.
 
-### 3. Merge Sort
+### 3. Bubble Sort
+
+Logic: Comparing two adjacent nodes, moving largest node to the tail and repeat.
+
+### 4. Merge Sort
 
 Logic: Recursively splits the list into two halves, sorts them, and merges them back.
 
-### 4. Quick Sort
+### 5. Quick Sort
 
 Logic: Recursively splits the list into two parts by a pivot and sorts them.
+
+### 6. MI Sort
+
+Logic: A combination of merge sort and insertion sort. Use insertion if the list is increasing, while merge the first 2 increasing list if the list is not sorted.
 
 ## Project Structure
 
@@ -35,6 +43,7 @@ Logic: Recursively splits the list into two parts by a pivot and sorts them.
 |   |   |── bubble_sort.cpp
 │   │   |── merge_sort.cpp
 │   │   |── quick_sort.cpp
+|   |   |── MI_sort.cpp
 |   |── /utils
 |   |   |── list_utils.cpp
 |   |── benchmark.cpp

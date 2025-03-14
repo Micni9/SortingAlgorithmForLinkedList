@@ -20,18 +20,12 @@ set(UTILS
     src/utils
 )
 
-set(SOURCES
-    ${ALGORITHMS}/insertion_sort.cpp
-    ${ALGORITHMS}/merge_sort.cpp
-    ${ALGORITHMS}/quick_sort.cpp
-    ${ALGORITHMS}/selection_sort.cpp
-    ${ALGORITHMS}/bubble_sort.cpp
-)
+file(GLOB SRC_FILES ${ALGORITHMS}/*.cpp)
 
 set(LIST_UTILS
     ${UTILS}/list_utils.cpp
 )
 
 # Add the source files to the project
-add_executable(SortingLinkedList src/main.cpp ${SOURCES} ${LIST_UTILS})
-add_executable(BenchMark src/benchmark.cpp ${SOURCES} ${LIST_UTILS})
+add_executable(SortingLinkedList src/main.cpp ${SRC_FILES} ${LIST_UTILS})
+add_executable(BenchMark src/benchmark.cpp ${SRC_FILES} ${LIST_UTILS})
