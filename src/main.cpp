@@ -12,12 +12,13 @@ int main(){
     }
     cout<<endl;
     
-    // Let the user to choose which sorting methods is used.
-    vector<string> sortings = {"selection", "insertion", "bubble", "merge", "quick"};
     while(1){
         ListNode *head = create_list(vec);
         cout<<"\nPlease choose the sorting method or end the program: "<<endl;
         cout<<"0. End the program"<<endl;
+
+        
+        vector<string> sortings = {"selection", "insertion", "bubble", "merge", "quick"};
         for(int i = 0; i < sortings.size(); i++){
             cout<<i+1<<". "<<sortings[i]<<" sort"<<endl;
         }

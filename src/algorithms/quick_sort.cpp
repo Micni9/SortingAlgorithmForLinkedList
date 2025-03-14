@@ -1,7 +1,5 @@
 #include "list_node.h"
 #include "sortings.h"
-#include <iostream>
-using namespace std;
 
 ListNode* partition(ListNode* dummy, ListNode* tail){
     ListNode* pivot = dummy->next;

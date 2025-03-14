@@ -34,3 +34,4 @@ set(LIST_UTILS
 
 # Add the source files to the project
 add_executable(SortingLinkedList src/main.cpp ${SOURCES} ${LIST_UTILS})
+add_executable(BenchMark src/benchmark.cpp ${SOURCES} ${LIST_UTILS})

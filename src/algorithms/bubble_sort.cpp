@@ -1,7 +1,5 @@
 #include "list_node.h"
 #include "sortings.h"
-#include <iostream>
-using namespace std;
 
 void bubble_sort(ListNode*& head){
     if(head == nullptr || head->next == nullptr) return;
